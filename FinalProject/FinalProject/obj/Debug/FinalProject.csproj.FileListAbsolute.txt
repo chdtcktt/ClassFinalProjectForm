@@ -1,0 +1,9 @@
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\bin\FinalProject.dll
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\bin\FinalProject.pdb
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\bin\EntityFramework.dll
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\bin\EntityFramework.SqlServer.dll
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\bin\EntityFramework.xml
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\bin\EntityFramework.SqlServer.xml
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\obj\Debug\FinalProject.dll
+C:\_Repositories\GitHub\ClassFinalProjectForm\FinalProject\FinalProject\obj\Debug\FinalProject.pdb

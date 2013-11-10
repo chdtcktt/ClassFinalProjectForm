@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AdvWebDevProject" Class="AdvWebDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=AdvWebDevProject;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AdvWebDevProjectConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.pDelClassStudents" Method="pDelClassStudents">
+    <Parameter Name="ClassId" Parameter="classId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.pUpdClassStudents" Method="pUpdClassStudents">
+    <Parameter Name="OriginalClassId" Parameter="originalClassId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OriginalStudentId" Parameter="originalStudentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NewClassId" Parameter="newClassId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NewStudentId" Parameter="newStudentId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.pInsClassStudents" Method="pInsClassStudents">
+    <Parameter Name="ClassId" Parameter="classId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.pSelClassesByStudents" Method="pSelClassesByStudents">
+    <ElementType Name="pSelClassesByStudentsResult">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StudentName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="StudentEmail" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ClassId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ClassName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ClassDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ClassDescription" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.pSelLoginIdByLoginAndPassword" Method="pSelLoginIdByLoginAndPassword">
+    <Parameter Name="StudentLogin" Parameter="studentLogin" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="StudentPassword" Parameter="studentPassword" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
