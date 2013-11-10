@@ -21,6 +21,12 @@ namespace FinalProject.Views
             db.pSelLoginIdByLoginAndPassword(TextBoxUserName.Text,TextBoxPassword.Text, ref value);
 
             Session["studentid"] = value;
+
+
+            if (value == null)
+            {
+            }
+
         
         }
     }
