@@ -8,6 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/hovercomponents.css" rel="stylesheet" />
     <link href="../../Content/site.css" rel="stylesheet" />
 </head>
 <body>

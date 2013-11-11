@@ -1,2 +1,45 @@
 ﻿body {
 }
+
+
+nav {
+     width: 100%;
+    padding: 30px 0 40px;
+    background: #C0C0C0;
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+
+.c-main-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.c-main-container h1{
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.c-top-navigation {
+    position: relative;
+    float: right;
+}
+
+.c-top-navigation li {
+    display: inline;
+    text-align: center;
+}
+
+.c-top-navigation li:hover {
+    background: #272B30;
+    
+}
+
+.c-top-navigation li a {
+    color: #FFFFF0;
+    font-size: 11pt;
+    text-decoration: none;
+}

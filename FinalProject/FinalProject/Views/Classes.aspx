@@ -18,19 +18,24 @@
             <ul class="nav navbar-nav">
                 <li><a href="Login.aspx">Login</a></li>
                 <li class="active"><a href="Classes.aspx">Classes Offered</a></li>
+                <li><a href="NewLogin.aspx">Request Login</a></li>
+
             </ul>
         </div>
     </nav>
 
+    <div class="c-main-container">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover table-bordered" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="ClassName" HeaderText="ClassName" SortExpression="ClassName" />
+                <asp:BoundField DataField="ClassDate" HeaderText="ClassDate" SortExpression="ClassDate" />
+                <asp:BoundField DataField="ClassDescription" HeaderText="ClassDescription" SortExpression="ClassDescription" />
+            </Columns>
+        </asp:GridView>
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover" DataSourceID="SqlDataSource1">
-        <Columns>
-            <asp:BoundField DataField="ClassName" HeaderText="ClassName" SortExpression="ClassName" />
-            <asp:BoundField DataField="ClassDate" HeaderText="ClassDate" SortExpression="ClassDate" />
-            <asp:BoundField DataField="ClassDescription" HeaderText="ClassDescription" SortExpression="ClassDescription" />
-        </Columns>
-    </asp:GridView>
 
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AdvWebDevProjectConnectionString %>" SelectCommand="SELECT [ClassName], [ClassDate], [ClassDescription] FROM [Classes]"></asp:SqlDataSource>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AdvWebDevProjectConnectionString %>" SelectCommand="SELECT [ClassName], [ClassDate], [ClassDescription] FROM [Classes]"></asp:SqlDataSource>
+    </div>
+
 </asp:Content>
