@@ -13,13 +13,13 @@ namespace FinalProject.Views {
     public partial class Login {
         
         /// <summary>
-        /// TextBoxUserName control.
+        /// RequiredFieldPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxUserName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldPassword;
         
         /// <summary>
         /// RequiredFieldValidatorUserName control.
@@ -31,6 +31,24 @@ namespace FinalProject.Views {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorUserName;
         
         /// <summary>
+        /// BadLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator BadLogin;
+        
+        /// <summary>
+        /// TextBoxUserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxUserName;
+        
+        /// <summary>
         /// TextBoxPassword control.
         /// </summary>
         /// <remarks>
@@ -40,15 +58,6 @@ namespace FinalProject.Views {
         protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
         
         /// <summary>
-        /// RequiredFieldPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldPassword;
-        
-        /// <summary>
         /// ButtonLogin control.
         /// </summary>
         /// <remarks>
@@ -56,14 +65,5 @@ namespace FinalProject.Views {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonLogin;
-        
-        /// <summary>
-        /// BadLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator BadLogin;
     }
 }

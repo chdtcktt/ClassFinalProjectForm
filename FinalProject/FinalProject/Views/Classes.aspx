@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <nav class="navbar navbar-default" role="navigation">
+ <%--   <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -20,6 +20,18 @@
                 <li class="active"><a href="Classes.aspx">Classes Offered</a></li>
                 <li><a href="NewLogin.aspx">Request Login</a></li>
 
+            </ul>
+        </div>
+    </nav>--%>
+
+    
+        <nav>
+        <div class="c-main-container">
+            <h1>Contoso University</h1>
+            <ul class="c-top-navigation cl-effect-1">
+                <li><a href="Login.aspx">Login</a></li>
+                <li class="c-active"><a href="Classes.aspx">Classes Offered</a></li>
+                <li><a href="NewLogin.aspx">Request Login</a></li>
             </ul>
         </div>
     </nav>

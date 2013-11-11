@@ -34,7 +34,7 @@
             <ul class="c-top-navigation cl-effect-1">
                 <li><a href="Login.aspx">Login</a></li>
                 <li><a href="Classes.aspx">Classes Offered</a></li>
-                <li class="active"><a href="NewLogin.aspx">Request Login</a></li>
+                <li class="c-active"><a href="NewLogin.aspx">Request Login</a></li>
             </ul>
         </div>
     </nav>
