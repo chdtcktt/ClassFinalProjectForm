@@ -13,15 +13,6 @@ namespace FinalProject.Views {
     public partial class Login {
         
         /// <summary>
-        /// RequiredFieldPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldPassword;
-        
-        /// <summary>
         /// RequiredFieldValidatorUserName control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace FinalProject.Views {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorUserName;
+        
+        /// <summary>
+        /// RequiredFieldPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldPassword;
         
         /// <summary>
         /// BadLogin control.
