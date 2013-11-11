@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>University Contoso</title>
+    <title>Contoso University</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
@@ -12,13 +12,18 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+
+
+
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
-    
+
+    <script src="../../Scripts/jquery-2.0.3.min.js"></script>
     <script src="../../Scripts/bootstrap.min.js"></script>
 </body>
 </html>

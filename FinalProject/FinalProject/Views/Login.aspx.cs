@@ -25,6 +25,12 @@ namespace FinalProject.Views
 
             if (value == null)
             {
+                BadLogin.ErrorMessage = "Authentication Failure";
+                BadLogin.IsValid=false;
+            }
+            else
+            {
+                Response.Redirect("MyClasses.aspx");
             }
 
         
