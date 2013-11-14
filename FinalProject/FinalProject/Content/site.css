@@ -5,7 +5,7 @@
 nav {
      width: 100%;
     padding: 30px 0 40px;
-    background: #C0C0C0;
+    background: #CB4437;
     margin-bottom: 40px;
     color: #FFFFFF;
 }
@@ -34,7 +34,7 @@ nav {
 }
 
 .c-top-navigation li:hover {
-    background: #272B30;
+    background: rgb(56, 53, 53);
     
 }
 
@@ -45,9 +45,10 @@ nav {
 }
 
 .c-active {
-    background: #272B30;
+    background: rgb(56, 53, 53);
 }
 
 #c-login {
     line-height: 60px;
 }
+

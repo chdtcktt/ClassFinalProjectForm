@@ -9,11 +9,11 @@
         <div class="c-main-container">
             <h1>Contoso University</h1>
             <ul class="c-top-navigation cl-effect-1">
-                <li><a href="Classes.aspx">Classes Offered</a></li>
+                <li class="c-active"><a href="Classes.aspx">Classes Offered</a></li>
                 <li><a href="MyClasses.aspx">My Classes</a></li>
                 <li><a href="Register.aspx">Register for Classes</a></li>
                 <li><a href="NewLogin.aspx">Request Login</a></li>
-                <li class="c-active"><a href="Login.aspx">Login</a></li>
+                <li><a href="Login.aspx">Login</a></li>
 
             </ul>
         </div>

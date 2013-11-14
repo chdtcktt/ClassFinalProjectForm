@@ -18,7 +18,10 @@ namespace FinalProject.Views
        
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["studentid"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void Grid_RowCommand(object sender, GridViewCommandEventArgs e)

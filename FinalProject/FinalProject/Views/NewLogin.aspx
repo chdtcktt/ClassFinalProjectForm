@@ -5,15 +5,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-       <nav>
+    <nav>
         <div class="c-main-container">
             <h1>Contoso University</h1>
             <ul class="c-top-navigation cl-effect-1">
                 <li><a href="Classes.aspx">Classes Offered</a></li>
                 <li><a href="MyClasses.aspx">My Classes</a></li>
                 <li><a href="Register.aspx">Register for Classes</a></li>
-                <li><a href="NewLogin.aspx">Request Login</a></li>
-                <li class="c-active"><a href="Login.aspx">Login</a></li>
+                <li class="c-active"><a href="NewLogin.aspx">Request Login</a></li>
+                <li><a href="Login.aspx">Login</a></li>
 
             </ul>
         </div>
@@ -21,7 +21,7 @@
 
 
     <div class="c-main-container">
-        <table class="table table-striped table-condensed">
+        <table class="table table-striped table-hover table-bordered">
             <tr>
                 <td>
                     <asp:Label ID="LabelName" runat="server" Text="Name"></asp:Label>
@@ -76,10 +76,27 @@
             </tr>
             <tr>
                 <td>
+                    <asp:Label ID="LabelLoginType" runat="server" Text="Login Type"></asp:Label>
+                </td>
+                <td>
                     <asp:RadioButton ID="RadioButton1" runat="server" Text="New Login"
-                        CssClass="style2" GroupName="LoginType" />
+                         GroupName="LoginType" />
                     &nbsp;<asp:RadioButton ID="RadioButton2" runat="server" Text="Reactivate Login"
-                        CssClass="style1" Checked="True" GroupName="LoginType" />
+                         Checked="True" GroupName="LoginType" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Date needed by:</span><br />
+                    <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+
+                </td>
+                <td>
+                    
+        <asp:Label ID="LabelReason" runat="server" Text="Reason for access?"></asp:Label>
+        &nbsp;<br />
+        <asp:TextBox ID="TextBoxReason" runat="server" Height="161px" Width="553px"></asp:TextBox>
+                    
                 </td>
             </tr>
         </table>
@@ -87,24 +104,16 @@
 
 
 
-        <br />
-        <asp:Label ID="LabelReason" runat="server" Text="Reason for access?"></asp:Label>
-        &nbsp;<br />
-        <asp:TextBox ID="TextBoxReason" runat="server" Height="161px" Width="553px"></asp:TextBox>
+
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"
             ControlToValidate="TextBoxReason" Display="Dynamic"
             ErrorMessage="You must enter a Reason you need access"></asp:RequiredFieldValidator>
-        <br />
-        <br />
-        <span class="style3">Date needed by:</span><br />
-        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-        <br />
-        <asp:ValidationSummary ID="ValidationSummary1" runat="server"
-            Style="background-color: #FF9999" />
+
+
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" Style="background-color: #FF9999" />
         <asp:Label ID="LabelInfo" runat="server"></asp:Label>
-        <br />
-        <br />
-        <asp:Button ID="ButtonSubmitRequest" runat="server" Text="Submit Request" Width="203px"
+
+        <asp:Button ID="ButtonSubmitRequest" CssClass="btn-default" runat="server" Text="Submit Request" Width="203px"
             OnClick="ButtonSubmitRequest_Click" />
 
 

@@ -9,15 +9,13 @@ namespace FinalProject.Views
 {
     public partial class MyClasses : System.Web.UI.Page
     {
-        private AdvWebDataContext db;
-
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            db = new AdvWebDataContext();
-            var value = Session["studentid"];
-
-            db.pSelClassesByStudents();
+           if (Session["studentid"] == null)
+           {
+               Response.Redirect("Login.aspx");
+           }
 
         }
     }
