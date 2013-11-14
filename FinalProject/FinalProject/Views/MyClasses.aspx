@@ -3,27 +3,38 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="MyClasses.aspx">Contoso University</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="MyClasses.aspx">My Classes</a></li>
-                <li><a href="Register.aspx">Register</a>
-                </li>
+     <nav>
+        <div class="c-main-container">
+            <h1>Contoso University</h1>
+            <ul class="c-top-navigation cl-effect-1">
+                <li><a href="Classes.aspx">Classes Offered</a></li>
+                <li><a href="MyClasses.aspx">My Classes</a></li>
+                <li><a href="Register.aspx">Register for Classes</a></li>
+                <li><a href="NewLogin.aspx">Request Login</a></li>
+                <li class="c-active"><a href="Login.aspx">Login</a></li>
+
             </ul>
-          
         </div>
-        
     </nav>
+    
+    
+        <div class="c-main-container">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ClassId" DataSourceID="SqlDataSource1">
+                <Columns>
+                    <asp:BoundField DataField="ClassId" HeaderText="ClassId" ReadOnly="True" SortExpression="ClassId" />
+                    <asp:BoundField DataField="ClassName" HeaderText="ClassName" SortExpression="ClassName" />
+                    <asp:BoundField DataField="ClassDate" HeaderText="ClassDate" SortExpression="ClassDate" />
+                    <asp:BoundField DataField="ClassDescription" HeaderText="ClassDescription" SortExpression="ClassDescription" />
+                </Columns>
+            </asp:GridView>
+
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AdvWebDevProjectConnectionString %>" SelectCommand="pSelClassesByStudentId" SelectCommandType="StoredProcedure">
+                <SelectParameters>
+                    <asp:SessionParameter Name="StudentId" SessionField="studentid" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+
+        </div>
     
 </asp:Content>
 

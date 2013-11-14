@@ -97,6 +97,20 @@ namespace FinalProject
 			studentId = ((System.Nullable<int>)(result.GetParameterValue(2)));
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.pCreateLoginRequest")]
+		public int pCreateLoginRequest([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Name", DbType="NVarChar(100)")] string name, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LoginName", DbType="NVarChar(100)")] string loginName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateNeeded", DbType="DateTime")] System.Nullable<System.DateTime> dateNeeded, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewOrReactivate", DbType="NVarChar(100)")] string newOrReactivate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ReasonForAccess", DbType="NVarChar(100)")] string reasonForAccess)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), name, email, loginName, dateNeeded, newOrReactivate, reasonForAccess);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.pSelClassesByStudentId")]
+		public ISingleResult<pSelClassesByStudentIdResult> pSelClassesByStudentId([global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), studentId);
+			return ((ISingleResult<pSelClassesByStudentIdResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class pSelClassesByStudentsResult
@@ -166,6 +180,86 @@ namespace FinalProject
 					this._StudentEmail = value;
 				}
 			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ClassId", DbType="Int NOT NULL")]
+		public int ClassId
+		{
+			get
+			{
+				return this._ClassId;
+			}
+			set
+			{
+				if ((this._ClassId != value))
+				{
+					this._ClassId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ClassName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string ClassName
+		{
+			get
+			{
+				return this._ClassName;
+			}
+			set
+			{
+				if ((this._ClassName != value))
+				{
+					this._ClassName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ClassDate", DbType="DateTime NOT NULL")]
+		public System.DateTime ClassDate
+		{
+			get
+			{
+				return this._ClassDate;
+			}
+			set
+			{
+				if ((this._ClassDate != value))
+				{
+					this._ClassDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ClassDescription", DbType="NVarChar(2000) NOT NULL", CanBeNull=false)]
+		public string ClassDescription
+		{
+			get
+			{
+				return this._ClassDescription;
+			}
+			set
+			{
+				if ((this._ClassDescription != value))
+				{
+					this._ClassDescription = value;
+				}
+			}
+		}
+	}
+	
+	public partial class pSelClassesByStudentIdResult
+	{
+		
+		private int _ClassId;
+		
+		private string _ClassName;
+		
+		private System.DateTime _ClassDate;
+		
+		private string _ClassDescription;
+		
+		public pSelClassesByStudentIdResult()
+		{
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ClassId", DbType="Int NOT NULL")]

@@ -34,4 +34,22 @@
     <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" Direction="InOut" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.pCreateLoginRequest" Method="pCreateLoginRequest">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="LoginName" Parameter="loginName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="DateNeeded" Parameter="dateNeeded" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="NewOrReactivate" Parameter="newOrReactivate" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ReasonForAccess" Parameter="reasonForAccess" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.pSelClassesByStudentId" Method="pSelClassesByStudentId">
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="pSelClassesByStudentIdResult">
+      <Column Name="ClassId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ClassName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ClassDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ClassDescription" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>
