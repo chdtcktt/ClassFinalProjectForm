@@ -16,7 +16,7 @@ namespace FinalProject.Views
             db = new AdvWebDataContext();
         }
 
-        private Boolean blnDateSelected = false;
+        private Boolean blnDateSelected;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,7 +27,6 @@ namespace FinalProject.Views
             else if (Calendar1.SelectedDate <= DateTime.Today)
             {
                 LabelInfo.Text = "You must chose a future date";
-                LabelInfo.BackColor = System.Drawing.Color.LightSalmon;
             }
             else
             {

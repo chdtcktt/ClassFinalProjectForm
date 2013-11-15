@@ -47,8 +47,13 @@ nav {
 .c-active {
     background: rgb(56, 53, 53);
 }
+.c-Errors {
+    background: #CB4437;
+    color: #FFFFF0;
+}
 
 #c-login {
     line-height: 60px;
 }
+
 

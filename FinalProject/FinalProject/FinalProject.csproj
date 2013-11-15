@@ -87,7 +87,8 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="SQLScripts\pCreateLogin.sql" />
+    <Content Include="SQLScripts\pCreateLoginRequest.sql" />
+    <Content Include="SQLScripts\pSelClassesByStudentId.sql" />
     <Content Include="Views\Classes.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Views\MyClasses.aspx" />

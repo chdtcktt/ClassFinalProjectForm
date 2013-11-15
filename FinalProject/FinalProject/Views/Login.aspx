@@ -47,7 +47,7 @@
         </div>
         <br />
 
-        <asp:Button CssClass="btn-primary btn-lg" ID="ButtonLogin" runat="server" Text="Log in" OnClick="ButtonLogin_Click" />
+        <asp:Button CssClass="btn-default" Width="203px" ID="ButtonLogin" runat="server" Text="Log in" OnClick="ButtonLogin_Click" />
 
 
 
