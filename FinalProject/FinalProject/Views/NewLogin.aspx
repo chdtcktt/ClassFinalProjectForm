@@ -5,20 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <nav>
-        <div class="c-main-container">
-            <h1>Contoso University</h1>
-            <ul class="c-top-navigation cl-effect-1">
-                <li><a href="Classes.aspx">Classes Offered</a></li>
-                <li><a href="MyClasses.aspx">My Classes</a></li>
-                <li><a href="Register.aspx">Register for Classes</a></li>
-                <li class="c-active"><a href="NewLogin.aspx">Request Login</a></li>
-                <li><a href="Login.aspx">Login</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
 
     <div class="c-main-container">
         <table class="table table-striped table-hover table-bordered">
@@ -108,7 +94,7 @@
         <asp:Label ID="LabelInfoError" CssClass="c-Errors" runat="server"></asp:Label>
         <asp:Label ID="LabelInfo" CssClass="c-Info" runat="server"></asp:Label>
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="c-Errors" />
-        <asp:Button ID="ButtonSubmitRequest" CssClass="btn-default" runat="server" Text="Submit Request" Width="203px"
+        <asp:Button ID="ButtonSubmitRequest"  runat="server" Text="Submit Request" Width="203px"
             OnClick="ButtonSubmitRequest_Click" />
 
 

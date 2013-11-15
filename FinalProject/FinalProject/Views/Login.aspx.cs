@@ -30,6 +30,7 @@ namespace FinalProject.Views
             }
             else
             {
+
                 Response.Redirect("MyClasses.aspx");
             }
 

@@ -4,21 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
-
-    <nav>
-        <div class="c-main-container">
-            <h1>Contoso University</h1>
-            <ul class="c-top-navigation cl-effect-1">
-                <li><a href="Classes.aspx">Classes Offered</a></li>
-                <li><a href="MyClasses.aspx">My Classes</a></li>
-                <li><a href="Register.aspx">Register for Classes</a></li>
-                <li><a href="NewLogin.aspx">Request Login</a></li>
-                <li class="c-active"><a href="Login.aspx">Login</a></li>
-
-            </ul>
-        </div>
-    </nav>
     <div class="c-main-container">
 
         <asp:RequiredFieldValidator
@@ -47,7 +32,7 @@
         </div>
         <br />
 
-        <asp:Button CssClass="btn-default" Width="203px" ID="ButtonLogin" runat="server" Text="Log in" OnClick="ButtonLogin_Click" />
+        <asp:Button  Width="203px" ID="ButtonLogin" runat="server" Text="Log in" OnClick="ButtonLogin_Click" />
 
 
 
