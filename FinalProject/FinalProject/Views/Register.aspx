@@ -20,7 +20,7 @@
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:AdvWebDevProjectConnectionString %>' SelectCommand="SELECT * FROM [Classes]"></asp:SqlDataSource>
     
     
-    
+    <asp:Label ID="LabelAlert" runat="server" CssClass="c-Info"></asp:Label>
        
     </div>
 

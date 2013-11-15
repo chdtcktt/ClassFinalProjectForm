@@ -32,6 +32,8 @@ namespace FinalProject.Views
 
             db.pInsClassStudents(classId, studentId);
 
+            LabelAlert.Text = "This class will be added";
+
         }
 
     

@@ -6,12 +6,13 @@
  
     
         <div class="c-main-container">
-            <asp:GridView ID="GridView1" CssClass="table table-bordered table-hover table-striped" runat="server" AutoGenerateColumns="False" DataKeyNames="ClassId" DataSourceID="SqlDataSource1">
+            <asp:GridView ID="GridView1" OnRowCommand="Grid_RowCommand" CssClass="table table-bordered table-hover table-striped" runat="server" AutoGenerateColumns="False" DataKeyNames="ClassId" DataSourceID="SqlDataSource1">
                 <Columns>
                     <asp:BoundField DataField="ClassId" HeaderText="ClassId" ReadOnly="True" SortExpression="ClassId" />
                     <asp:BoundField DataField="ClassName" HeaderText="ClassName" SortExpression="ClassName" />
                     <asp:BoundField DataField="ClassDate" HeaderText="ClassDate" SortExpression="ClassDate" />
                     <asp:BoundField DataField="ClassDescription" HeaderText="ClassDescription" SortExpression="ClassDescription" />
+                    <asp:ButtonField ButtonType="Button" Text="Remove" CommandName="Remove" />
                 </Columns>
             </asp:GridView>
 
@@ -20,6 +21,8 @@
                     <asp:SessionParameter Name="StudentId" SessionField="studentid" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
+            
+            <asp:Label ID="LabelAlert" runat="server" CssClass="c-Info"></asp:Label>
 
         </div>
     
