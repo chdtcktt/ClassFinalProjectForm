@@ -26,11 +26,11 @@ namespace FinalProject.Views
             }
             else if (Calendar1.SelectedDate <= DateTime.Today)
             {
-                LabelInfo.Text = "You must chose a future date";
+               LabelInfoCalendar.Text = "You must chose a future date";
             }
             else
             {
-                LabelInfo.Text = "";
+                LabelInfoCalendar.Text = "";
                 blnDateSelected = true;
             }
         }
@@ -59,15 +59,13 @@ namespace FinalProject.Views
                     LabelInfo.Text += "Request Received. Thank You!<br/>";
                     LabelInfo.Text +=
                         "A Password will be sent to you once our staff have manually gone over your request";
-                    LabelInfo.BackColor = System.Drawing.Color.LightGreen;
 
 
 
                 }
                 catch
                 {
-                    LabelInfo.Text = "Server Error. Please try again in a moment";
-                    LabelInfo.BackColor = System.Drawing.Color.LightSalmon;
+                    LabelInfoError.Text = "Server Error. Please try again in a moment";
                 }
             }
         }

@@ -89,7 +89,7 @@
                 <td>
                     <span>Date needed by:</span><br />
                     <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-                    <asp:Label ID="LabelInfo" CssClass="c-Errors" runat="server"></asp:Label>
+                    <asp:Label ID="LabelInfoCalendar" CssClass="c-Errors" runat="server"></asp:Label>
 
                 </td>
                 <td>
@@ -105,7 +105,8 @@
                 </td>
             </tr>
         </table>
-
+        <asp:Label ID="LabelInfoError" CssClass="c-Errors" runat="server"></asp:Label>
+        <asp:Label ID="LabelInfo" CssClass="c-Info" runat="server"></asp:Label>
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="c-Errors" />
         <asp:Button ID="ButtonSubmitRequest" CssClass="btn-default" runat="server" Text="Submit Request" Width="203px"
             OnClick="ButtonSubmitRequest_Click" />

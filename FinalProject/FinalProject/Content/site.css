@@ -51,6 +51,10 @@ nav {
     background: #CB4437;
     color: #FFFFF0;
 }
+.c-Info {
+    background: green;
+    color: #FFFFF0;
+}
 
 #c-login {
     line-height: 60px;

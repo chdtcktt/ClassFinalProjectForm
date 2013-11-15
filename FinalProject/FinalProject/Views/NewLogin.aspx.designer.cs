@@ -157,13 +157,13 @@ namespace FinalProject.Views {
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
-        /// LabelInfo control.
+        /// LabelInfoCalendar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelInfo;
+        protected global::System.Web.UI.WebControls.Label LabelInfoCalendar;
         
         /// <summary>
         /// LabelReason control.
@@ -191,6 +191,24 @@ namespace FinalProject.Views {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        
+        /// <summary>
+        /// LabelInfoError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelInfoError;
+        
+        /// <summary>
+        /// LabelInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelInfo;
         
         /// <summary>
         /// ValidationSummary1 control.
