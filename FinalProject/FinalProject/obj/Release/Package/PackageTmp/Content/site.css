@@ -1,0 +1,73 @@
+﻿body {
+}
+
+
+nav {
+     width: 100%;
+    padding: 30px 0 40px;
+    background: #CB4437;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.c-main-container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.c-main-container h1{
+    font-size: 25pt;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.c-top-navigation {
+    position: relative;
+    float: right;
+}
+
+.c-top-navigation li {
+    display: inline;
+    text-align: center;
+}
+
+.c-top-navigation li:hover {
+    background: rgb(56, 53, 53);
+    
+}
+
+.c-top-navigation li a {
+    color: #FFFFF0;
+    font-size: 11pt;
+    text-decoration: none;
+}
+
+.c-active {
+    background: rgb(56, 53, 53);
+}
+.c-Errors {
+    background: #CB4437;
+    color: #FFFFF0;
+}
+.c-Info {
+    background: green;
+    color: #FFFFF0;
+}
+
+.c-items-notvisible{
+    visibility: hidden;
+}
+
+.c-items-visible {
+    visibility: visible;
+}
+
+
+
+#c-login {
+    line-height: 60px;
+}
+
+

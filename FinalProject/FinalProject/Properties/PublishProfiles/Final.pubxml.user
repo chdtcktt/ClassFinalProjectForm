@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+NW1wbfZlEWk4rnKCO6IPQAAAAACAAAAAAADZgAAwAAAABAAAAB/7j826GCnGBD/2lZ35tM7AAAAAASAAACgAAAAEAAAANoET9r8reB2947HCkQv4uYgAAAAC6+To7w5Oe71U6cPULIH1md9JR17kOquaXXBfc7mQpYUAAAAcqf9Io534aERgUOQHzFqmvS1i6w=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AdvWeb.dbml">
+      <publishTime>11/20/2013 21:38:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/10/2013 10:48:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/10/2013 10:48:40</publishTime>
+    </File>
+    <File Include="bin/FinalProject.dll">
+      <publishTime>11/20/2013 21:40:52</publishTime>
+    </File>
+    <File Include="Classes.aspx">
+      <publishTime>11/20/2013 20:01:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="Content/hovercomponents.css">
+      <publishTime>11/10/2013 16:42:16</publishTime>
+    </File>
+    <File Include="Content/site.css">
+      <publishTime>11/20/2013 18:22:55</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/10/2013 10:49:11</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>11/20/2013 21:32:56</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>11/20/2013 21:32:56</publishTime>
+    </File>
+    <File Include="Master1.Master">
+      <publishTime>11/20/2013 21:35:01</publishTime>
+    </File>
+    <File Include="MyClasses.aspx">
+      <publishTime>11/20/2013 21:32:56</publishTime>
+    </File>
+    <File Include="NewLogin.aspx">
+      <publishTime>11/20/2013 21:32:28</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="Register.aspx">
+      <publishTime>11/20/2013 21:30:22</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/10/2013 10:49:11</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/10/2013 10:49:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.js">
+      <publishTime>11/10/2013 10:48:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.min.js">
+      <publishTime>11/10/2013 10:48:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.min.map">
+      <publishTime>11/10/2013 10:48:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/10/2013 10:48:52</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/10/2013 10:48:52</publishTime>
+    </File>
+    <File Include="SQLScripts/pCreateLoginRequest.sql">
+      <publishTime>11/13/2013 19:16:35</publishTime>
+    </File>
+    <File Include="SQLScripts/pSelClassesByStudentId.sql">
+      <publishTime>11/13/2013 21:01:00</publishTime>
+    </File>
+    <File Include="Views/Classes.aspx">
+      <publishTime>11/20/2013 21:09:03</publishTime>
+    </File>
+    <File Include="Views/Login.aspx">
+      <publishTime>11/20/2013 20:50:54</publishTime>
+    </File>
+    <File Include="Views/MyClasses.aspx">
+      <publishTime>11/20/2013 21:09:03</publishTime>
+    </File>
+    <File Include="Views/NewLogin.aspx">
+      <publishTime>11/20/2013 20:50:54</publishTime>
+    </File>
+    <File Include="Views/packages.config">
+      <publishTime>11/10/2013 10:49:12</publishTime>
+    </File>
+    <File Include="Views/Register.aspx">
+      <publishTime>11/20/2013 21:09:03</publishTime>
+    </File>
+    <File Include="Views/Shared/Master1.Master">
+      <publishTime>11/15/2013 15:02:58</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/20/2013 21:19:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
